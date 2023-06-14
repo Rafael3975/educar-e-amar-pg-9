@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<style>
+    .margem_pagina{
+        margin: auto;
+        width: 80%;
+        margin-top: -5px;
+        background-color: bisque;
+        
+    }
+</style>
+
+<html lang="pt-br" class="margem_pagina">
+    <head>
+        <!--top demaiss-->
+        <meta charset="utf-8">
+        <title>Projeto Educar é Amar</title>
+        <meta name="author" content="Rafael Souza da Silva">
+        <meta name="description" content="Portal para educadores voltado para auxiliar pessoas com deficiências diversas">
+        <meta name="keywords" content="Educação, Tecnologia, Portal, Inclusão, Vídeos, Artigos, Dicas, Educação Inclusiva, Socialização, Deficiência, Visual, motora, auditiva, mental, inclusão">
+
+        <style>
+            .background{
+                background-image: url(1);
+                
+            }
+            .portal{
+                font-size: 350%;
+                font-family: sans-serif;
+                color: orange;
+                font-weight: bold;
+                font-size: clamp(20px, 3.5px + 4vw, 1200%);
+                position: relative;
+                margin-top: 0%;
+                
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+                
+                
+                
+            }
+            .portal:hover{
+                border: #999;
+                top:-4px; 
+                }
+            .educar{
+                font-family: sans-serif;
+                color: rgb(136, 204, 34);
+                font-size: clamp(50px, 3.5px + 7vw, 1000%);
+                position: relative;
+                margin-top: -9%;
+                margin-left: 20%;
+                display: inline-block;
+                font-weight: bold;
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+            }
+            .educar:hover{
+                border: #999;
+                top:-4px; 
+            }
+            .amar{
+                font-family: sans-serif;
+                color: red;
+                font-size: clamp(15px, 10px + 7vw, 1000%);
+                position: relative;
+                margin-top: -13%;
+                margin-left: 55%;
+                text-align: center;
+                font-weight: bold;
+                font-weight: bold;
+
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+            }
+            .amar:hover{
+                border: #999;
+                top:-4px; 
+            }
+            .date{
+                text-align: right;
+                margin-left: 25%;
+                position: relative;
+                font-size: clamp(10px, 10px + 2.5vw, 1000%);
+                font-family: sans-serif;
+            }
+            .cadeirante{
+                
+                position: relative;
+                margin-top: -28%;
+                margin-left: 0%;
+                display: block;
+                width: 21%;
+                height: 20%;
+
+            }
+            .cadeirante:hover{
+                
+            }
+            .livro_azul{
+                width: 13%;
+                position: relative;
+                display: block;
+                margin-left: 78%;
+                margin-top: -23%;
+
+                
+            }
+            .livro_azul:hover{
+                
+            }
+            .mensagem{
+                font-family:sans-serif;
+                padding-top: 18%;
+                font-size: clamp(8px, 10px + 1.5vw, 700%);
+                text-align: center;
+
+            }
+            #mensagem_espaço{
+                padding-bottom: 0.5%;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                margin-bottom: 0.5%;
+                margin-top: 0.5%;
+
+            }
+            #mensagem_espaço1{
+                margin-bottom: 0.7%;
+                padding-bottom: 0.5%;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+
+            .mensagem textarea{
+                font-size: clamp(8px, 10px + 1vw, 200%);
+                text-align: center;
+                font-family:sans-serif;
+                padding-top: 4%;
+                background-color: #FFFACD;
+                width: 99%;
+                margin: auto;
+            }
+            .video{
+                width: 100%;
+                margin-bottom: 0%;
+                margin-top: 1.5%;
+                padding-left: 0%;
+                
+                
+            }
+            .ajuste_video{
+                
+                background-color: #FFFACD;
+                margin-top: 20%;
+                
+            }
+            .enviar_mensagem{
+               width: 10%;
+               display: inline-block;
+               font-size: clamp(3px, 10px + 0.5vw, 100%);
+               margin-left: 60%;
+               position: absolute;
+               margin-top: -30%;
+               
+            }
+            caption{
+                font-family:sans-serif;
+                padding-top: 2%;
+                font-size: clamp(8px, 10px + 1.5vw, 700%);
+                text-align: center;
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+                margin: auto;
+                background: #FFFACD;
+                border: solid black;
+                border-width: 1px;
+            }
+            th{
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            .email_mensagem_submeter{
+                margin-top: 2%;
+                font-size: clamp(8px, 10px + 1vw, 200%);
+                background-color: #FFFACD;
+                border: solid black;
+                border-width: 1px;
+            }
+            .msg{
+                margin-top: 2%;
+                width: 100%;
+            }
+            .msg_border{
+                border: solid black;
+                border-width: 1px;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                padding-bottom: 10px;
+            }
+            .footer{
+                border: solid black;
+                border-width: 1px;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                padding-bottom: 2%;
+                margin-bottom: 2%;
+                margin-top: 6%;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: clamp(5px, 7px + 1vw, 100%);
+            }
+            .text_initial_page{
+                background-color: #FFFACD;
+                text-align: justify;
+                font-size: clamp(8px, 8px + 1vw, 200%);
+                position: relative;
+                margin-top: 2%;
+                
+                
+                
+                
+            }
+            .text_initial_page_2{
+                float:left;
+                text-align: justify;
+                font-size: clamp(8px, 8px + 1vw, 200%);
+                margin-top: -45%;
+                max-width: 45%;
+
+            }
+            .text_image{
+                float: right;
+                text-align: center;
+            }
+            #ajuste_justificar_direita{
+                text-align: justify;
+            }
+            .infografico{
+                width: 40%;
+                text-align: center;
+                height: 30%;
+                margin-left: 30%;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="background">
+        <div class="date"> 
+            <script class="date" language="JavaScript">
+
+                document.write("<font color='#000000' size='3' face='sans-serif'>")
+                var mydate=new Date()
+                var year=mydate.getYear()
+                if (year<2000)
+                year += (year < 1900) ? 1900 : 0
+                var day=mydate.getDay()
+                var month=mydate.getMonth()
+                var daym=mydate.getDate()
+                if (daym<10)
+                daym="0"+daym
+                var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
+                var montharray=new Array(" de Janeiro de "," de Fevereiro de "," de Março de ","de Abril de ","de Maio de ","de Junho de","de Julho de ","de Agosto de ","de Setembro de "," de Outubro de "," de Novembro de "," de Dezembro de ")
+                document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
+                document.write("</b></i></font>")
+                </script>
+        </div>
+
+        <p class="portal">Portal</p>
+        <p class="educar">educar é</p>
+        <p class="amar">AMAR</p>
+
+        
+        <img  class="cadeirante" src="def_mental-removebg-preview.png" alt="Deficiência Mental">
+        <img class="livro_azul" src="livro_azul.jpg" alt="Livro Azul">
+            
+        
+        <form action="#" method="post">
+            <fieldset class="ajuste_video">
+
+                <h2>Tipos de Retardo Mental (RM)</h2>
+
+                <h4><i>Ouça este artigo</i></h4>
+                <audio controls>
+                    <source src="Deficiência Mental o que é e como lidar em sala de aula.mp3" type="audio/mp3">
+                </audio>
+                <h4>Faça o <a  href="Artigo traduzido para Braille.pdf" download="Artigo traduzido para Braille.pdf" style="display: inline">donwload</a> do artigo em braille</h4>
+
+                <p class="text_initial_page">
+                    Os tipos de retardo mental (RM) são classificados de acordo com o Coeficiente de Inteligência (Q.I.). Quando o Q.I. de uma pessoa é abaixo de 70, já podese considerar algum tipo de retardo mental (quando é uma consequência do desenvolvimento humano, até os 18 anos).
+                </p>
+
+                <video autoplay muted id="executar" width="100%" height="30%" controls="controls" autoplay="autoplay muted" poster="Capa_Video.PNG" style="padding-top: 1%; padding-bottom: 1%;">
+                    <source src="DEFICIÊNCIA MENTAL PG 8 ‐ Feito com o Clipchamp.webm" type="video/webm"/>
+                </video>
+
+                <p class="text_initial_page">
+                    O retardo mental tem categorias e afeta diretamente o aprendizado do educando em diferentes níveis. Podemos observar isso conforme explica a obra “Atendimento Educacional Especializado”:
+                </p>
+                  
+                <p class="text_initial_page">
+                    “A dificuldade de diagnosticar a deficiência mental tem levado a uma série de revisões do seu conceito. A medida do coeficiente de inteligência (QI), por exemplo, foi utilizada durante muitos anos como parâmetro de definição dos casos. O próprio CID 10 (Código Internacional de Doenças, desenvolvido pela Organização Mundial de Saúde), ao especificar o Retardo Mental (F70-79), propõe uma definição ainda baseada no coeficiente de inteligência, classificando-o entre leve, moderado e profundo, conforme o comprometimento. ” (Atendimento Educacional Especializado; portal.mec.gov.br; pg. 14).
+                </p>
+
+                <p class="text_initial_page">
+                    Considerando esses aspectos, será que se pode considerar a deficiência
+                    mental uma doença? Ao realizar esse tipo de abordagem, é imprescindível ter muito
+                    cuidado, principalmente em sala de aula, pois este é um ambiente de socialização, e
+                    a turma pode acabar entendendo que o aluno deficiente tem uma doença. Pode-se
+                    mudar essa perspectiva, inferindo que o aluno é perfeitamente capaz como os demais.    
+                </p>
+                <p class="text_initial_page">
+                    Trata-se ainda de uma abordagem da obra “Atendimento Educacional Especializado”:
+                </p>
+
+                <p class="text_initial_page">
+                    “Para entender a deficiência mental, temos de puxar diferentes fios e cruzálos entre si, buscando respostas e esclarecimentos que permitam compreendê-la”. (Atendimento Educacional Especializado; portal.mec.gov.br; pg. 7).
+                </p>
+
+                <p class="text_initial_page">
+                    O documento, proposto pela Organização Mundial da Saúde (OMS), traz um esquema para classificar os diferentes níveis de retardo mental:
+                </p>
+
+                <img  class="text-image" src="Tabela.PNG" style="width: 80%; text-align: center; margin-left: 10%; margin-bottom: 1%;" alt="Tipos de Retardo Mental de acordo com a OMS">
+                <div  style="padding-left: 23%;text-align: center; font-size: clamp(2px, 4px + 1vw, 100%); padding-top: -2%; display: inline-block; position:relative; ">Tipos de Retardo Mental de acordo com a OMS</div>
+
+                <p class="text_initial_page">
+                    A Classificação Internacional de Doenças e Problemas Relacionados com a Saúde (CID) está representada na última coluna, sendo que a CID F70 representa o retardo mental leve. Assim também se classificam as demais doenças e problemas de saúde.
+                </p>
+                <p class="text_initial_page">
+                    De acordo com a OMS, o Q.I.=70 é o Q.I. médio da população mundial, baseando-se em testes e teorias psicogenéticas, o que gera muitas críticas.
+                </p>
+                <p class="text_initial_page">
+                    Com o decorrer dos anos, foi-se intensificada a pesquisa científica voltada para a deficiência intelectual, mas ainda assim, é muito tímida em alguns casos, tendo em vista os avanços na área da saúde e tecnologia. Muito ainda deve-se fazer, não apenas para as pessoas em sala de aula, mas em todos os ambientes. Esse é um dos objetivos do Portal Educar é Amar: levar conhecimento para educadores e alunos, sejam deficientes ou não, permitindo a acessibilidade e a inclusão.
+                </p>
+                
+            <div>    
+                <script>
+                    document.getElementById('executar').play();
+                </script>
+            </div>    
+            </fieldset>
+        </form>
+          
+       
+       
+
+          
+        <footer>
+            <div class="footer">
+                <p>Todos os direitos reservados  Dev_Ultra © 2023   devultra7.7@gmail.com</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
